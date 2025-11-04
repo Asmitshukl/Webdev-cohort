@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input type="text" placeholder="Write here"></input>
+        <button onclick="addfn()">Add todo</button>
+    </body>
+    <script>
+        ctr=1;
+        function deletetodo(index){
+            const element= document.getElementById(index);
+            element.parentNode.removeChild(element);
+        }
+        function addfn(){
+            const t=document.querySelector("input");
+            const val=t.value;
+            // console.log(val);
+            const divel=document.createElement("div");
+            divel.setAttribute("id",ctr);
+            divel.innerHTML="<div>"+val+'</div><button onclick="deletetodo('+ctr+')">delete</button';
+            ctr+=1;
+            document.querySelector("body").appendChild(divel);
+        }
+    </script>
+</html>

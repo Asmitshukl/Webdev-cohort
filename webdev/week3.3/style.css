@@ -1,0 +1,233 @@
+
+.to-do{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.btn{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.in-progress{
+    border: 5px;
+    color: black;
+    width: 330px;
+    height: 330px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+.under-review{
+    border: 5px;
+    color: black;
+    width: 330px;
+    height: 330px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+.finished{
+    border: 5px;
+    color: black;
+    width: 330px;
+    height: 330px;
+    margin: 20px;
+    background-color: aquamarine;
+} */
