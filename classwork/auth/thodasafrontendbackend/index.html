@@ -1,0 +1,47 @@
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        async function signup(){
+            const username=document.querySelector(".sin").value;
+            const password=document.querySelector(".pass1").value;
+            await axios.post("http://localhost:3000/signup",{
+                data:{
+                    username:username,
+                    password:password
+                }
+            });
+            alert("u are signed in")
+        }
+        async function signin(){
+            const username=document.querySelector(".sgn").value;
+            const password=document.querySelector(".pass2").value;
+            const response=await axios.post("http://localhost:3000/signin",{
+                data:{
+                    username:username,
+                    password:password
+                }
+            });
+            localStorage.setItem("token",response.data.token);
+        }
+
+    </script>
+    <head>
+        <body>
+            <div>
+                SignUp
+                <input type="text" class="sin" placeholder="UserName" ></input>
+                <input type="text" class="pass1" placeholder="password"></input>
+                <button onclick="signup()">SignUp</button>
+            </div>
+            <div>
+                SignIN
+                <input type="text" class="sgn" placeholder="UserName"></input>
+                <input type="password" class="pass2" placeholder="password"></input>
+                <button onclick="signin()">SignIN</button>
+            </div>
+            <div>
+                <button>Logout</button>
+            </div>
+        </body>
+    </head>
+</html>
